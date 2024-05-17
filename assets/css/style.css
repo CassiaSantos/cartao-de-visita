@@ -1,0 +1,47 @@
+body {
+    /*background: conic-gradient(black, slateblue, #333, #555, slateblue, #333, black);*/
+    background: conic-gradient(#DB66E4, #DB66E4, #94F6F2, #94F6F2, #94F6F2, #DB66E4, #DB66E4);
+    color: black;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.card {
+    border: 3px solid;
+    border-radius: 16px;
+    width: 600px;
+    text-align: center;
+    padding: 32px;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(100px);
+}
+
+.perfil img {
+    border: 1px solid;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 5px;
+}
+
+.perfil h1 {
+    font-size: 24px;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 32px;
+}
+
+.redes-sociais a {
+    color: black;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: linear-gradient(#0004, #fff4);
+}
