@@ -1,17 +1,23 @@
 body {
-    /*background: conic-gradient(black, slateblue, #333, #555, slateblue, #333, black);*/
-    background: conic-gradient(#DB66E4, #DB66E4, #94F6F2, #94F6F2, #94F6F2, #DB66E4, #DB66E4);
+    background: conic-gradient(#DB66E4, #DB66E4, #77E4D4, #77E4D4, #77E4D4, #DB66E4, #DB66E4);
     color: black;
     font-family: sans-serif;
     height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    margin: auto;
+    max-width: 100vh;
+    max-height: 100vh;
 }
 
 .card {
     border: 3px solid;
-    border-radius: 16px;
-    width: 600px;
+    border-radius: 1em;
+    width: 38rem;
     text-align: center;
-    padding: 32px;
+    padding: 2em;
     position:absolute;
     left: 50%;
     top: 50%;
@@ -21,27 +27,64 @@ body {
 
 .perfil img {
     border: 1px solid;
-    width: 120px;
+    width: 8em;
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 0 5px;
 }
 
 .perfil h1 {
-    font-size: 24px;
+    font-size: 1.5em;
+}
+.biografia p {
+    line-height: 1.8em;
+    text-align: justify;
 }
 
 .redes-sociais {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 32px;
+    margin-bottom: 2em;
 }
 
 .redes-sociais a {
     color: black;
     text-decoration: none;
     border: 1px solid;
-    padding: 8px;
-    border-radius: 8px;
-    background-color: linear-gradient(#0004, #fff4);
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 48rem) {
+    .container{
+        margin: 2em;
+    }
+
+    .card{
+        border: none;
+        max-width: 80vw;
+    }
+
+    .redes-sociais {
+        flex-direction: column;
+        margin: auto 0.8rem;
+        gap: 0.5em;  
+    }
+
+    .redes-sociais a {
+        justify-content: center;
+        margin: 0.5em;
+        width: 7.5em;
+        max-width: 7.5em;
+        margin: auto;
+    }
+
+    .biografia p {
+        padding-top: 1.5em;
+        margin: auto;
+        max-width: 90vw;
+        flex-wrap: wrap;
+    }
 }
